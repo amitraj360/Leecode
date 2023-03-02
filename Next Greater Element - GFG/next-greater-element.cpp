@@ -21,21 +21,12 @@ class Solution
                    v[s.top().second]=heights[i];
                    s.pop();
                }
-               s.push(make_pair(heights[i], i));
+               
            }
-           else
-           {
-             s.push(make_pair(heights[i], i));
-
-           }
-        //   for(auto j:v)
-        //   {
-        //       cout<<j<<" ";
-        //   }
-        //   cout<<endl;
+           s.push(make_pair(heights[i], i));
         }
 
-return v;
+        return v;
         
     }
 };
